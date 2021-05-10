@@ -7,11 +7,11 @@
         {% endif %}
         
         {% if page.url != '/'%}
-        <a class="navbar-brand mx-auto" href="/result2016-2018/">
+        <a class="navbar-brand mx-auto" href="{{site.baseurl}}/">
             <img src="{{ '/images/raceyaya-logo.png' | prepend: site.baseurl}}"/>
         </a>
         {% else %}
-        <a class="navbar-brand" href="/result2016-2018/">
+        <a class="navbar-brand" href="{{site.baseurl}}/">
             <img src="{{'/images/raceyaya-logo.png' | prepend: site.baseurl}}"/>
         </a>
 
@@ -20,7 +20,7 @@
                 <a href="https://results.raceyaya.com/" class="nav-link navbar-extra navbar-result-text">2019-2021 Results</a>
             </li>
             <li class="nav-item">
-                <a href="https://results.raceyaya.com/result2016-2018/" class="nav-link navbar-extra navbar-result-text">2016-2018 Results</a>
+                <a href="https://results.raceyaya.com{{site.baseurl}}/" class="nav-link navbar-extra navbar-result-text">2016-2018 Results</a>
             </li>
             <li class="nav-item active">
                 <a href="https://raceyaya.com/" target="_blank" class="nav-link navbar-extra">About RaceYaya</a>
